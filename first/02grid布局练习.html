@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 5*100 +4*2 510 */
+        /* 5*50 +4*2 260 */
+        .grid-container{
+            margin: 10px auto;
+            background-color: antiquewhite;
+            display: grid;
+            width: 510px;
+            height: 260px;
+            grid-template-columns: repeat(5,100px);
+            grid-template-rows: repeat(5,50px);
+            grid-gap: 2px;
+            place-content: space-evenly;
+            
+        }
+        .grid-item {
+            box-sizing: border-box;
+            background-color: white;
+            color:white;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        .one{
+            background-color: brown;
+        }
+        .two{
+            background-color: skyblue;
+        }
+        .three{
+            background-color: orange;
+        }
+        .four{
+            background-color: purple;
+        }
+        .five{
+            background-color: cadetblue;
+        }
+        .six{
+            background-color: cornflowerblue;
+        }
+        .seven{
+            background-color: red ;
+            grid-area: 2/2/4/4;
+        }
+        .eight{
+            background-color: green;
+        }
+        .nine{
+            background-color: cornflowerblue;
+        }
+        .ten{
+            background-color: skyblue;
+        }
+        .eleven{
+            background-color: brown;
+            grid-area: 3/4/5/6;
+        }
+        .twelve{
+            background-color: orange;
+        }
+        .thirteen{
+            background-color: cornflowerblue;
+        }
+        .fourteen{
+            background-color: orange;
+        }
+        .fifteen{
+            background-color:green;
+        }
+        .sixteen{
+            background-color: aqua;
+        }
+        .seventeen{
+            background-color: purple;
+        }
+        .eighteen{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item one">1</div>
+        <div class="grid-item two">2</div>
+        <div class="grid-item three">3</div>
+        <div class="grid-item four">4</div>
+        <div class="grid-item five">5</div>
+        <div class="grid-item six">6</div>
+        <div class="grid-item seven">7</div>
+        <div class="grid-item eight">8</div>
+        <div class="grid-item nine">10</div>
+        <div class="grid-item ten">11</div>
+        <div class="grid-item eleven">9</div>
+        <div class="grid-item twelve">12</div>
+        <div class="grid-item thirteen">13</div>
+        <div class="grid-item fourteen">14</div>
+        <div class="grid-item fifteen">15</div>
+        <div class="grid-item sixteen">16</div>
+        <div class="grid-item seventeen">17</div>
+        <div class="grid-item eighteen">18</div>
+    </div>
+</body>
+</html>

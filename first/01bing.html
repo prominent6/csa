@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            outline: none;
+        }
+        *{
+           list-style: none; 
+           margin: 0;
+           padding: 0;
+        }
+        body{
+            background-color: pink;
+        }
+        .w{
+            width: 615px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            align-items:center ;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-left{
+            display:flex;
+            justify-items: space-between;
+            align-items: center;
+        }
+        .nav-left li{
+            margin: 0 10px;
+        }
+        .nav-right{
+            display:flex;
+            justify-items: space-between;
+        }
+        
+        .nav-right .info{
+            display: flex;
+            margin-right: 10px;
+        }
+        .nav-right .info .pic{
+            width: 20px;
+            height: 20px;
+            background-color: bisque;
+        }
+        .nav-right .more{
+            background-color: white;
+            width: 20px;
+            height: 20px;
+        }
+        .main{
+            margin-top: 100px;
+        }
+        .main .version{
+            display: flex;
+            margin-left: 12px;
+        }
+        .main .version div{
+            width: 60px;
+            height: 25px;
+            line-height: 25px;
+            background-color: white;
+            margin: 10px 6px;
+            text-align: center;
+            border-radius: 25px;
+        }
+        .main .search-input input{
+            width: 500px;
+            height: 40px;
+            border-radius: 25px;
+        }
+        .main .search-input button{
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="w">
+        <div class="nav">
+            <ul class="nav-left">
+                <li><h1 id="logo">Microsoft Bing</h1></li>
+                <li>图片 </li>
+                <li>...</li>
+            </ul>
+            <ul class="nav-right">
+                <li>
+                    <div class="info">
+                        <div class="username">卓萱</div>
+                        <div class="pic"></div>
+                    </div>
+                </li>
+                <li class="more"></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <div class="version">
+                <div class="home">国内版</div>
+                <div class="abroad">国际版</div>
+            </div>
+            <div class="search-input">
+                <input type="text">
+                <button>搜索</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
